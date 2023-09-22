@@ -1,0 +1,12 @@
+---
+// JavaScript
+const header = Astro.props.header;
+const imgPath = Astro.props.imgPath;
+const { newBadge } = Astro.props;
+---
+
+<article class="Categorycard">
+  <img class="cover" src={imgPath} alt="" />
+  {newBadge && <p class="badge colorbox ">NEW</p>}
+  <h2>{header}</h2>
+</article>
